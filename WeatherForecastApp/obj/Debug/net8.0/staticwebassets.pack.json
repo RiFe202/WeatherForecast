@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\ericl\\Desktop\\Prosjekter\\WeatherForecast\\WeatherForecastApp\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.WeatherForecastApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.WeatherForecastApp.props",
+      "PackagePath": "build\\WeatherForecastApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.WeatherForecastApp.props",
+      "PackagePath": "buildMultiTargeting\\WeatherForecastApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.WeatherForecastApp.props",
+      "PackagePath": "buildTransitive\\WeatherForecastApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

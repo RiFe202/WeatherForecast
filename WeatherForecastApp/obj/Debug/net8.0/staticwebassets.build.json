@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "tR5/g30u2QbusYpbaB20gRcznnsZFi2mANWroqk/qWk=",
+  "Source": "WeatherForecastApp",
+  "BasePath": "_content/WeatherForecastApp",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "WeatherForecastApp\\wwwroot",
+      "Source": "WeatherForecastApp",
+      "ContentRoot": "C:\\Users\\ericl\\Desktop\\Prosjekter\\WeatherForecast\\WeatherForecastApp\\wwwroot\\",
+      "BasePath": "_content/WeatherForecastApp",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\ericl\\Desktop\\Prosjekter\\WeatherForecast\\WeatherForecastApp\\wwwroot\\index.html",
+      "SourceId": "WeatherForecastApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ericl\\Desktop\\Prosjekter\\WeatherForecast\\WeatherForecastApp\\wwwroot\\",
+      "BasePath": "_content/WeatherForecastApp",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Forecast</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      #output {
+        margin-top: 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        background-color: #f9f9f9;
+      }
+      .error {
+        color: red;
+      }
+    </style>
+    <script>
+      async function fetchWeather() {
+        const location = document.getElementById("location").value.trim();
+        const output = document.getElementById("output");
+
+        output.textContent = "";
+        output.classList.remove("error");
+
+        if (!location) {
+          output.textContent = "Please enter a valid location.";
+          output.classList.add("error");
+          return;
+        }
+
+        try {
+          const response = await fetch(
+            `/api/weather/${encodeURIComponent(location)}`
+          );
+
+          if (!response.ok) {
+            throw new Error("Failed to fetch weather data. Please try again.");
+          }
+
+          const data = await response.json();
+
+          if (!data || Object.keys(data).length === 0) {
+            output.textContent =
+              "No weather data found for the specified location.";
+            output.classList.add("error");
+            return;
+          }
+
+          output.textContent = formatWeatherData(data);
+        } catch (error) {
+          output.textContent = error.message;
+          output.classList.add("error");
+        }
+      }
+
+      function formatWeatherData(data) {
+        let result = "Weather Data:\n";
+        if (data.temperature) {
+          result += `Temperature: ${data.temperature}°C\n`;
+        }
+        if (data.wind) {
+          result += `Wind Speed: ${data.wind} km/h\n`;
+        }
+        if (data.description) {
+          result += `Description: ${data.description}\n`;
+        }
+        return result;
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Weather Forecast</h1>
+    <input type="text" id="location" placeholder="Enter location ID" />
+    <button onclick="fetchWeather()">Get Weather</button>
+    <pre id="output"></pre>
+  </body>
+</html>
