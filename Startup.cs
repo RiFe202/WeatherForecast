@@ -8,8 +8,8 @@ public class Startup
     public void ConfigureServices(IServiceCollection services)
     {
         services.AddControllers();
-        services.AddHttpClient(); // For fetching weather data
-        services.AddCors(); // Allow cross-origin requests (if needed)
+        services.AddHttpClient();
+        services.AddCors();
     }
 
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -19,7 +19,7 @@ public class Startup
             app.UseDeveloperExceptionPage();
         }
 
-        app.UseStaticFiles(); // Serve files from wwwroot
+        app.UseStaticFiles();
 
         app.UseRouting();
 

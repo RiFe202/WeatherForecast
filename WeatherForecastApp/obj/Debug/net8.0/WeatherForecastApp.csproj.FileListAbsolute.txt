@@ -47,3 +47,4 @@ C:\Users\ericl\Desktop\Prosjekter\WeatherForecast\WeatherForecastApp\bin\Debug\n
 C:\Users\ericl\Desktop\Prosjekter\WeatherForecast\WeatherForecastApp\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
 C:\Users\ericl\Desktop\Prosjekter\WeatherForecast\WeatherForecastApp\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
 C:\Users\ericl\Desktop\Prosjekter\WeatherForecast\WeatherForecastApp\bin\Debug\net8.0\HtmlAgilityPack.dll
+C:\Users\ericl\Desktop\Prosjekter\WeatherForecast\WeatherForecastApp\obj\Debug\net8.0\WeatherForecastApp.sourcelink.json
