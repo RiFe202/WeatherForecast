@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\ericl\\Desktop\\Prosjekter\\WeatherForecast\\WeatherForecastApp\\wwwroot\\WeatherForecast.cs",
+      "PackagePath": "staticwebassets\\WeatherForecast.cs"
+    },
+    {
       "Id": "C:\\Users\\ericl\\Desktop\\Prosjekter\\WeatherForecast\\WeatherForecastApp\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
